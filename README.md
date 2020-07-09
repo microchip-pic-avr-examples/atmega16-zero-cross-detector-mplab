@@ -1,41 +1,45 @@
-<!-- Please do not change this html logo with link -->
 <a href="https://www.microchip.com" rel="nofollow"><img src="images/microchip.png" alt="MCHP" width="300"/></a>
 
-# Update the title for atmega16-zero-cross-detector-mplab here
+# ATMEGA16 Zero Cross Detector
 
-<!-- This is where the introduction to the example goes, including mentioning the peripherals used -->
+![Circuit](images/circuit.png)
+
+This is an example of how make a zero cross detector with a ATmega16 which is based on the appnote [AN_2508](#Related-Documentation).
 
 ## Related Documentation
 
-<!-- Any information about an application note or tech brief can be linked here. Use unbreakable links!
-     In addition a link to the device family landing page and relevant peripheral pages as well:
-     - [AN3381 - Brushless DC Fan Speed Control Using Temperature Input and Tachometer Feedback](https://microchip.com/00003381/)
-     - [PIC18F-Q10 Family Product Page](https://www.microchip.com/design-centers/8-bit/pic-mcus/device-selection/pic18f-q10-product-family) -->
+- [AN_2508 - Zero Cross Detector](https://www.microchip.com/wwwAppNotes/AppNotes.aspx?appnote=en591171)
+- [ATmega16 Product Page](https://www.microchip.com/wwwproducts/en/ATmega16)
+- [ATmega16 datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/doc2466.pdf)
 
 ## Software Used
 
-<!-- All software used in this example must be listed here. Use unbreakable links!
-     - MPLAB® X IDE 5.30 or newer [(microchip.com/mplab/mplab-x-ide)](http://www.microchip.com/mplab/mplab-x-ide)
-     - MPLAB® XC8 2.10 or a newer compiler [(microchip.com/mplab/compilers)](http://www.microchip.com/mplab/compilers)
-     - MPLAB® Code Configurator (MCC) 3.95.0 or newer [(microchip.com/mplab/mplab-code-configurator)](https://www.microchip.com/mplab/mplab-code-configurator)
-     - MPLAB® Code Configurator (MCC) Device Libraries PIC10 / PIC12 / PIC16 / PIC18 MCUs [(microchip.com/mplab/mplab-code-configurator)](https://www.microchip.com/mplab/mplab-code-configurator)
-     - Microchip PIC18F-Q Series Device Support (1.4.109) or newer [(packs.download.microchip.com/)](https://packs.download.microchip.com/) -->
+- [MPLAB X IDE v5.40 or later](https://www.microchip.com/mplab/mplab-x-ide)
+- ATmega_DFP 1.4.351 or later
 
 ## Hardware Used
 
-<!-- All hardware used in this example must be listed here. Use unbreakable links!
-     - PIC18F47Q10 Curiosity Nano [(DM182029)](https://www.microchip.com/Developmenttools/ProductDetails/DM182029)
-     - Curiosity Nano Base for Click boards™ [(AC164162)](https://www.microchip.com/Developmenttools/ProductDetails/AC164162)
-     - POT Click board™ [(MIKROE-3402)](https://www.mikroe.com/pot-click) -->
+-  [ATmega16 TQFN](https://www.microchip.com/wwwproducts/en/ATmega16)
+-  [STK600](https://www.microchip.com/developmenttools/ProductDetails/ATSTK600) (Not required but we use it to hold our TQFN version of the chip)
+-  [STK600 Routing card](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/ATSTK600-RC31)
+-  [STK600 TQFP44](https://www.microchip.com/developmenttools/ProductDetails/ATSTK600-SC06)
+-  [ATATMEL-ICE](https://www.microchip.com/DevelopmentTools/ProductDetails/ATATMEL-ICE) to program since programming over STK600 is not supported in MPLABX
+- Logic analyser & wave generator to simulate mains and verify signal
 
 ## Setup
 
-<!-- Explain how to connect hardware and set up software. Depending on complexity, step-by-step instructions and/or tables and/or images can be used -->
+1. Connect the wavesource/wave generator to `PD2`
+2. Connect the logic analyser/output to `PB0`
 
 ## Operation
 
-<!-- Explain how to operate the example. Depending on complexity, step-by-step instructions and/or tables and/or images can be used -->
+1. Open `AVR182zerocrossdetector.X` in MPLAB
+2. Connect the ATmega16 with your programmer of choice, we used a Atmel ICE.
+3. Make sure the kit is selected as the tool to be programmed under project settings
+4. Press the make and program button to program the device.
+5. Generate a sinus waveform with **max** `VCC+0.5V` on `PD2` with a frequency of for example 50 Hz.
+6. The logic analyser will then show a pulse train equivalent to that frequency on `PB0`
 
-## Summary
+## Conclusion
 
-<!-- Summarize what the example has shown -->
+We have shown how you can make a simple zero cross detector with a ATmega16. For more detailed workings about this example please refere to the appnote [AN_2508](#Related-Documentation)
