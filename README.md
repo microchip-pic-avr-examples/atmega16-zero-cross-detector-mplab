@@ -49,4 +49,4 @@ An example of how to make a zero cross detector with a ATmega16 is given here wh
 
 ## Conclusion
 
-We have shown how you can make a simple zero cross detector with a ATmega16. For more detailed workings about this example please refere to the appnote [AN_2508](#Related-Documentation)
+We have shown how you can make a simple zero cross detector with a ATmega16. For more detailed workings about this example please refere to the appnote [AN_2508](#Related-Documentation).
