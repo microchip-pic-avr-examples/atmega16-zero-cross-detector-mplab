@@ -10,7 +10,7 @@ Noise produced during switching is dependent on the amplitude of the AC sinus at
 
 Zero cross detection can also be used for other purposes, such as frequency calculation and relative phase measuring.
 
-An example of how to make a zero cross detector with a ATmega16 is given here which is based on the appnote [AN_2508](#Related-Documentation).
+An example of how to make a zero cross detector with a ATmega16 is given here which is based on the appnote [AN_2508](https://www.microchip.com/wwwAppNotes/AppNotes.aspx?appnote=en591171).
 
 ## Related Documentation
 
@@ -49,4 +49,4 @@ An example of how to make a zero cross detector with a ATmega16 is given here wh
 
 ## Conclusion
 
-We have shown how you can make a simple zero cross detector with a ATmega16. For more detailed workings about this example please refere to the appnote [AN_2508](#Related-Documentation).
+We have shown how you can make a simple zero cross detector with a ATmega16. For more detailed workings about this example please refere to the appnote [AN_2508](https://www.microchip.com/wwwAppNotes/AppNotes.aspx?appnote=en591171).
