@@ -40,7 +40,7 @@ An example of how to make a zero cross detector with a ATmega16 is given here wh
 ## Operation
 
 1. Clone or download this repo.
-2. Open `AVR182zerocrossdetector.X` in MPLAB.
+2. Open `atmega16-zero-cross-detector-mplab.X` in MPLAB.
 3. Connect the ATmega16 with your programmer of choice, we used a Atmel ICE.
 4. Make sure the kit is selected as the tool to be programmed under project settings.
 5. Press the make and program button to program the device.
