@@ -1,4 +1,4 @@
-#include "atmel_start.h"
+#include <atmel_start.h>
 
 #define RETURN 100
 
@@ -25,7 +25,7 @@ void setup(void)
 ****************************************************************************/
 int main(void)
 {
-	system_init();
+	atmel_start_init();
 
 	setup(); // Setup ports and Interrupt
 	sei();   // Enable global interrupt and

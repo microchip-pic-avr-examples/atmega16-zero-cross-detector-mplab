@@ -6,7 +6,7 @@
 
 One of the many issues with developing modern applications is to keep the spikes and EMI at a minimum, especially when switching AC mains in and out. Most of today’s new applications are controlled by one or more microcontrollers and this gives the possibility to prevent this noise in a simple and cost efficient way.
 
-Noise produced during switching is dependent on the amplitude of the AC sinus at the actual switching point. To get this noise as low as possible the ideal switching would be when the amplitude is 0 volt. The amplitude is crossing 0 volt at the sinus “zero crossing”. Switching mains in and out at the zero crossing requires a way of detecting when the next crossing will be and launching a switching action at the crossing. This raises the need for a costefficient way to detect the zero crossing. This application note explains how to do that.
+Noise produced during switching is dependent on the amplitude of the AC sinus at the actual switching point. To get this noise as low as possible the ideal switching would be when the amplitude is 0 volt. The amplitude is crossing 0 volt at the sinus “zero crossing”. Switching mains in and out at the zero crossing requires a way of detecting when the next crossing will be and launching a switching action at the crossing. This raises the need for a cost efficient way to detect the zero crossing. This application note explains how to do that.
 
 Zero cross detection can also be used for other purposes, such as frequency calculation and relative phase measuring.
 
@@ -49,4 +49,4 @@ An example of how to make a zero cross detector with a ATmega16 is given here wh
 
 ## Conclusion
 
-We have shown how you can make a simple zero cross detector with a ATmega16. For more detailed workings about this example please refere to the appnote [AN_2508](https://www.microchip.com/wwwAppNotes/AppNotes.aspx?appnote=en591171).
+We have shown how you can make a simple zero cross detector with a ATmega16. For more detailed workings about this example please refer to the appnote [AN_2508](https://www.microchip.com/wwwAppNotes/AppNotes.aspx?appnote=en591171).
