@@ -3,7 +3,7 @@
     "category": "com.microchip.ide.project",
     "content": {
         "metaDataVersion": "1.1.0",
-        "name": "com.microchip.mcu8.mplab.project.atmega16-zero-cross-detector-mplab",
+        "name": "com.microchip.mcu8.mplabx.project.atmega16-zero-cross-detector-mplab",
         "version": "1.0.0",
         "displayName": "ATmega16 Zero Cross Detector",
         "projectName": "atmega16-zero-cross-detector-mplab",
